@@ -1,5 +1,7 @@
 # vue-3-auth-jwt
 
+Requires running Node.js [server](https://github.com/ahmedovv123/JWT-Auth-NodeJS) 
+
 ## Project setup
 
 ```bash
