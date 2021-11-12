@@ -7,16 +7,16 @@
 </template>
 
 <script>
-import UserService from '../services/user.service'
-import { onMounted, ref } from 'vue'
+import UserService from "../services/user.service";
+import { ref, onMounted } from 'vue'
 
 export default {
-  name: 'Home',
+  name: 'BoardUser',
   setup() {
     const content = ref('')
 
     onMounted(() => {
-      UserService.getPublicContent().then(
+      UserService.getUserBoard().then(
         response => {
           content.value = response.data
         },
@@ -35,3 +35,7 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+</style>
